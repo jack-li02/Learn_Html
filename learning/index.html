@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML 表單(FORM) 文字輸入區塊 textarea</title>
+    <title>HTML 表單(FORM) 單選 Radio Button 多選 Checkbox</title>
 </head>
 <body>
-    <h1>歡迎來到我的網頁</h1>
+    <!-- 單選 -->
+    <h3>你的性別</h3>
+    <label for="">
+        <input type="radio" name="sexual" value="yes">
+        男
+    </label>
+    <label for="">
+        <input type="radio" name="sexual" value="no">
+        女
+    </label>
+
+    <!-- 多選 -->
+    <h3>你喜歡什麼運動?可複選</h3>
     <form action="">
-        <label for="comment">評論或反饋</label>
-        <br>
-        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-        <br>
+        <input type="checkbox" name="sports" id="">
+        <label for="">足球</label>
+        <input type="checkbox" name="sports" id="">
+        <label for="">籃球</label>
+        <input type="checkbox" name="sports" id="">
+        <label for="">棒球</label>
+        <input type="checkbox" name="sports" id="">
+        <label for="">曲棍球</label>
+        <br><br>
         <input type="submit" value="提交">
     </form>
 </body>
