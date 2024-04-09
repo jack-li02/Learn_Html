@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS的3種使用方法</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 的顏色</title>
+    <style>
+        body{
+            color: blue;
+        }
+        #p1{
+            color: tomato;
+        }
+        #p2{
+            /* rgb(R,G,B) 0~255*/
+            color: rgb(35, 160, 91);
+        }
+        #p3{
+            /* #ffffff  */
+            color: #ffffff;
+            background-color: #000;
+        }
+        #p4{
+            /* hsl(hue, saturation, lightness) */
+            color: hsl(328, 59%, 56%);
+        }
+    </style>
 </head>
 <body>
-    <!-- 
-     -  行內樣式 (Inline Styling)
-        <p style="color: blue;">這是一段文字</p>
-     -  內嵌樣式 (Embedded Styling)
-        <head>
-            <style>
-                p{
-                    color: red;
-                }
-            </style>
-        </head>
-     -  外部樣式 (External Stylesheets)
-        <head>
-            <link rel="stylesheet" href="./style.css">
-        </head>
-    -->
-    <p>這是一段文字</p>
-    <p>這也是一段文字</p>
+    <p id="p1">這是第1段</p>
+    <p id="p2">這是第2段</p>
+    <p id="p3">這是第3段</p>
+    <p id="p4">這是第4段</p>  
 </body>
 </html>
