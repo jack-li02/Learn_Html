@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS語法入門</title>
-    <style>
-        header{
-            color: red;
-        }
-        p{
-            color: blue;
-        }
-        #my-header p{
-            color: yellow; background-color: gray;        }
-    </style>
+    <title>CSS的3種使用方法</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header id="my-header">
-        <h1>CSS語法入門</h1>
-        <p>這是一個頁首內段落</p>
-    </header>
-    <p>頁首外的一個段落</p>
+    <!-- 
+     -  行內樣式 (Inline Styling)
+        <p style="color: blue;">這是一段文字</p>
+     -  內嵌樣式 (Embedded Styling)
+        <head>
+            <style>
+                p{
+                    color: red;
+                }
+            </style>
+        </head>
+     -  外部樣式 (External Stylesheets)
+        <head>
+            <link rel="stylesheet" href="./style.css">
+        </head>
+    -->
+    <p>這是一段文字</p>
+    <p>這也是一段文字</p>
 </body>
 </html>
