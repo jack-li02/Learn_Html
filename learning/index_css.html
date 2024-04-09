@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 字體介紹</title>
-    
-    <!-- 使用網上GoogleFonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet"> -->
-    
+    <title>CSS 邊框 border</title>
     <style>
-         /* <--使用下載 GoogleFonts 到本地--> */
-        @font-face{ 
-            font-family: 'Bungee Spice';
-            src: url("./fonts/BungeeSpice-Regular.ttf");
-        }
-        h1{
-            font-family: 'Bungee Spice', sans-serif;
-            font-size: 4em;
-            font-weight: bold;
-            font-style: italic;
-        }
         p{
-            font-family: cursive, sans-serif;
+            /* border-style: solid;
+            border-width: 5px;
+            border-color: red; 
+            整合寫法 */
+            /* border: solid 3px green;
+            border-radius: 15px; */
+            border-top: 1px solid red;
+            border-bottom: 5px solid green;
+            border-left: dashed 1px black;
+            border-right: dashed 1px black;
         }
     </style>
 </head>
