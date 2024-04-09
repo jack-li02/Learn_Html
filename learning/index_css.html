@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 的顏色</title>
+    <title>CSS 字體介紹</title>
+    
+    <!-- 使用網上GoogleFonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet"> -->
+    
     <style>
-        body{
-            color: blue;
+         /* <--使用下載 GoogleFonts 到本地--> */
+        @font-face{ 
+            font-family: 'Bungee Spice';
+            src: url("./fonts/BungeeSpice-Regular.ttf");
         }
-        #p1{
-            color: tomato;
+        h1{
+            font-family: 'Bungee Spice', sans-serif;
+            font-size: 4em;
+            font-weight: bold;
+            font-style: italic;
         }
-        #p2{
-            /* rgb(R,G,B) 0~255*/
-            color: rgb(35, 160, 91);
-        }
-        #p3{
-            /* #ffffff  */
-            color: #ffffff;
-            background-color: #000;
-        }
-        #p4{
-            /* hsl(hue, saturation, lightness) */
-            color: hsl(328, 59%, 56%);
+        p{
+            font-family: cursive, sans-serif;
         }
     </style>
 </head>
 <body>
-    <p id="p1">這是第1段</p>
-    <p id="p2">這是第2段</p>
-    <p id="p3">這是第3段</p>
-    <p id="p4">這是第4段</p>  
+    <h1>CodeShiba</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, doloremque! Ea neque suscipit maiores dolor distinctio, ullam eius quaerat culpa quae est. Ex dolores quasi, esse incidunt atque amet sit.</p>  
 </body>
 </html>
