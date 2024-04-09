@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 陰影效果</title>
+    <title>CSS中的邊距 Margin</title>
     <style>
-        h1{
-            text-shadow: 3px 10px 10px #08c331;
+        div{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
         }
         #box_1{
-            box-shadow: 3px 10px 10px #c63d3d;
+            /* margin-top: 30px; 
+            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-right: 30px;  */
+            /* 上下左右皆同時 可簡寫成 margin:30px; */
+            /* 上左下右 */
+            margin: 10px 20px 30px 40px;
+        }
+        #box_2{
+            /* auto(垂直) auto(水平) 自動置中  */
+            margin: 100px auto;
         }
     </style>
 </head>
 <body>
     <!-- 文字陰影 盒子(box)陰影 -->
-    <h1>CodeShiba</h1>
-    <div id="box_1">第1個盒子</div>
-    <div id="box_2">第2個盒子</div>
+    <h1>這是標題元素</h1>
+    <div id="box_1">第1個box</div>
+    <div id="box_2">第2個box</div>
 </body>
 </html>
