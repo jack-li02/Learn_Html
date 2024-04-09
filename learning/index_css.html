@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 邊框 border</title>
+    <title>CSS 陰影效果</title>
     <style>
-        p{
-            /* border-style: solid;
-            border-width: 5px;
-            border-color: red; 
-            整合寫法 */
-            /* border: solid 3px green;
-            border-radius: 15px; */
-            border-top: 1px solid red;
-            border-bottom: 5px solid green;
-            border-left: dashed 1px black;
-            border-right: dashed 1px black;
+        h1{
+            text-shadow: 3px 10px 10px #08c331;
+        }
+        #box_1{
+            box-shadow: 3px 10px 10px #c63d3d;
         }
     </style>
 </head>
 <body>
+    <!-- 文字陰影 盒子(box)陰影 -->
     <h1>CodeShiba</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, doloremque! Ea neque suscipit maiores dolor distinctio, ullam eius quaerat culpa quae est. Ex dolores quasi, esse incidunt atque amet sit.</p>  
+    <div id="box_1">第1個盒子</div>
+    <div id="box_2">第2個盒子</div>
 </body>
 </html>
