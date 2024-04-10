@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS中的 Display 屬性</title>
+    <title>CSS中的高度和寬度</title>
     <style>
-        div{
-            /* inline 時無法設定長寬高 */
-            /* display: inline-block; */
-            display: inline;
-            height: 200px;
-            border: 2px solid red;
-        }    
-        span{
-            display: inline-block;
+        *{
+            /* box-sizing: border-box;將BOX的border寬度忽略 */
+            box-sizing: border-box;
         }
-        p{
-            display: none;
+        .container{
+            height: 100vh;
+            background-color: gray;
+        }
+        .box{
+            /* width: 25%; */
+            min-width: 25%;
+            max-width: 50%;
+            height: 100px;
+            border: 3px solid greenyellow;
+            float: left;
         }
     </style>
 </head>
 <body>
-    <div>這是 div(block 區塊)</div>
-    <span>這是 span 1(inline 同行內)</span>
-    <span>這是 span 2(inline 同行內)</span>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam, quasi dolor quos nobis est fuga ullam rerum fugit. Quo quasi adipisci molestiae perferendis. Dolor saepe non enim quam maxime?</p>
-    <span>這是 span 3(inline 同行內)</span>
-    <span>這是 span 4(inline 同行內)</span>
-    <span>這是 span 5(inline 同行內)</span>
+    <div class="container">
+        <div class="box">第1個BOX</div>
+        <div class="box">第2個BOX</div>
+        <div class="box">第3個BOX</div>
+        <div class="box">第4個BOX</div>
+    </div>
 </body>
 </html>
