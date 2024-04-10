@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS中的高度和寬度</title>
+    <title>CSS中的定位 Position</title>
     <style>
-        *{
-            /* box-sizing: border-box;將BOX的border寬度忽略 */
-            box-sizing: border-box;
+        .item1{
+            position: absolute;
+            top: 5px;
+            right: 100px;
+        }
+        .item6{
+            position: fixed;
+            top: 100px;
+            right: 100px;
         }
         .container{
-            height: 100vh;
-            background-color: gray;
+            width: 300px;
+            height: 800px;
+            border: 1px solid red;
+            background-color: grey;
+            position: relative;
         }
-        .box{
-            /* width: 25%; */
-            min-width: 25%;
-            max-width: 50%;
-            height: 100px;
+        .item{
+            width: 50px;
+            height: 50px;
             border: 3px solid greenyellow;
-            float: left;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">第1個BOX</div>
-        <div class="box">第2個BOX</div>
-        <div class="box">第3個BOX</div>
-        <div class="box">第4個BOX</div>
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+        <div class="item item11">11</div>
+        <div class="item item12">12</div>
     </div>
 </body>
 </html>
