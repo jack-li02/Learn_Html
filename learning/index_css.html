@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS中的浮動排版 float</title>
+    <title>CSS中的溢出 overflow</title>
     <style>
-        img{
-            float: left;
-            width: 100px;
-            height: 100px;
-        }
-        div{
-            float: right;
-            width: 100px;
-            height: 100px;
-            border: 1px solid black;
+        /* 設定範圍使文字溢出 */
+        #box_1{
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            overflow: hidden;
+            /*overflow 溢出時的5種型態 
+            1 visible
+            2 hidden
+            3 clip
+            4 scroll
+            5 auto
+            */            
         }
     </style>
 </head>
 <body>
-    <div>第1個區塊</div>
-    <div>第2個區塊</div>
-    <div>第3個區塊</div>
-    <img src="./img/city01.jpg" alt="">  
-    <img src="./img/city02.jpg" alt="">    
-    <img src="./img/city03.jpg" alt="">
-    
+    <div id="box_1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, earum quas. Ratione eum quia itaque porro reprehenderit, quasi numquam delectus doloremque illum, voluptatem blanditiis minima sequi aperiam consequatur esse repudiandae.</p>
+    </div>
 </body>
 </html>
