@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS中的溢出 overflow</title>
+    <title>CSS中的 Display 屬性</title>
     <style>
-        /* 設定範圍使文字溢出 */
-        #box_1{
-            width: 150px;
-            height: 150px;
+        div{
+            /* inline 時無法設定長寬高 */
+            /* display: inline-block; */
+            display: inline;
+            height: 200px;
             border: 2px solid red;
-            overflow: hidden;
-            /*overflow 溢出時的5種型態 
-            1 visible
-            2 hidden
-            3 clip
-            4 scroll
-            5 auto
-            */            
+        }    
+        span{
+            display: inline-block;
+        }
+        p{
+            display: none;
         }
     </style>
 </head>
 <body>
-    <div id="box_1">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, earum quas. Ratione eum quia itaque porro reprehenderit, quasi numquam delectus doloremque illum, voluptatem blanditiis minima sequi aperiam consequatur esse repudiandae.</p>
-    </div>
+    <div>這是 div(block 區塊)</div>
+    <span>這是 span 1(inline 同行內)</span>
+    <span>這是 span 2(inline 同行內)</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam, quasi dolor quos nobis est fuga ullam rerum fugit. Quo quasi adipisci molestiae perferendis. Dolor saepe non enim quam maxime?</p>
+    <span>這是 span 3(inline 同行內)</span>
+    <span>這是 span 4(inline 同行內)</span>
+    <span>這是 span 5(inline 同行內)</span>
 </body>
 </html>
