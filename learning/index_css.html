@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS中的內邊距 Padding</title>
+    <title>CSS 選擇器: 用CSS 選擇元素</title>
     <style>
-        .mydiv{
-            margin: 30px;
-            /* padding用法同margin可分別設定上右下左  */
-            padding: 20px;
-            border: 2px solid red;
-            color: greenyellow;
-            background-color: grey;
+        /* 選擇元素{
+            屬性: 值
+        } */
+        h1 {
+            color: blue;
+        }
+        p {
+            color: red;
+        }
+        a {
+            text-decoration: underline;            
         }
     </style>
 </head>
 <body>
-    <div class="mydiv">這是1個元素,具有外邊距margin,內邊距padding,和邊框border</div>
+    <div>
+        <h1>這是h1標題</h1>
+        <p>這是p段落1</p>
+        <p>這是p段落2</p>
+        <a href="#">這是a鏈結</a>
+        <span>這是span標籤</span>
+    </div>
 </body>
 </html>
