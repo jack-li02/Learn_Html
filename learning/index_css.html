@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 選擇器: 用CSS 選擇元素</title>
+    <title>ID 與 Class 選擇器</title>
     <style>
-        /* 選擇元素{
-            屬性: 值
-        } */
-        h1 {
-            color: blue;
+        #content_header{
+            color: orangered;
         }
-        p {
-            color: red;
-        }
-        a {
-            text-decoration: underline;            
+        .highlight{
+            color: mediumvioletred;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>這是h1標題</h1>
-        <p>這是p段落1</p>
-        <p>這是p段落2</p>
-        <a href="#">這是a鏈結</a>
-        <span>這是span標籤</span>
-    </div>
+    <header>
+        <h2>Header標題</h2>
+    </header>
+    <h2 id="content_header">內容h2標題</h2>
+    <p>
+        這是段落1<span class="highlight">需要強調的文字</span>
+    </p>
+    <p>
+        這是段落2<span class="highlight">需要強調的文字</span>
+    </p>
 </body>
 </html>
