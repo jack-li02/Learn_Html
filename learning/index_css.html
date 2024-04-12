@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鄰居選擇器 Adjacent</title>
+    <title>屬性選擇器</title>
     <style>
-        #all-articles h2 + p {
-            color: orchid;
-        }
-        #all-articles h2 {
-            color: green;
-        }
+       span[class]{
+        color: blueviolet;
+       } 
+       a[title]{
+        color: red;
+       }
+       a[href$=".pdf"]{
+        color: green;
+       }
+       a[href^="https"]{
+        color: pink;
+       }
     </style>
 </head>
 <body>
-    <div id="all-articles">
-        <article>
-            <h2>鄰居選擇器</h2>
-            <p>作者:張三</p>
-            <p>這是文章內容1...</p>
-        </article>
-        <article>
-            <h2>文章標題2</h2>
-            <p>作者:李四</p>
-            <p>這是文章內容2...</p>
-        </article>
-        <article>
-            <h2>文章標題3</h2>
-            <p>作者:王五</p>
-            <p>這是文章內容3...</p>
-        </article>
-    </div>
+    <span class="class1">這是紫色段落</span>
+    <span class="class2">這是紫色段落</span>
+    <span >這不是紫色段落</span>
+    <a href="http://www.google.com" title="search">這是1個紅色鏈結</a>
+    <a href="http://www.example.com" title="example">這是1個紅色鏈結</a>
+    <a href="file.pdf">這是1個綠色鏈結</a>
+    <a href="https://www.example.com">這是1個粉紅色鏈結</a>
 </body>
 </html>
