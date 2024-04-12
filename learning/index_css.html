@@ -3,29 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>屬性選擇器</title>
+    <title>第1與最後子元素</title>
     <style>
-       span[class]{
-        color: blueviolet;
-       } 
-       a[title]{
-        color: red;
-       }
-       a[href$=".pdf"]{
+       article P:first-child{
         color: green;
        }
-       a[href^="https"]{
-        color: pink;
+       article P:last-child{
+        color: red;
        }
     </style>
 </head>
 <body>
-    <span class="class1">這是紫色段落</span>
-    <span class="class2">這是紫色段落</span>
-    <span >這不是紫色段落</span>
-    <a href="http://www.google.com" title="search">這是1個紅色鏈結</a>
-    <a href="http://www.example.com" title="example">這是1個紅色鏈結</a>
-    <a href="file.pdf">這是1個綠色鏈結</a>
-    <a href="https://www.example.com">這是1個粉紅色鏈結</a>
+    <article>
+        <p>第1子元素</p>
+        <p>第2子元素</p>
+        <p>第3子元素</p>
+        <p>第4子元素</p>
+    </article>
 </body>
 </html>
