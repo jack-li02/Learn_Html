@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ID 與 Class 選擇器</title>
+    <title>後代選擇器</title>
     <style>
-        #content_header{
-            color: orangered;
+        #main_content p{
+            color: orange;
         }
-        .highlight{
-            color: mediumvioletred;
-            text-decoration: underline;
+        
+        #sub_content p{
+            color: blue;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h2>Header標題</h2>
-    </header>
-    <h2 id="content_header">內容h2標題</h2>
-    <p>
-        這是段落1<span class="highlight">需要強調的文字</span>
-    </p>
-    <p>
-        這是段落2<span class="highlight">需要強調的文字</span>
-    </p>
+    <div id="main_content">
+        <p>這是後代節點</p>
+        <div id="sub_content">
+            <p>也是後代節點,且是sub_content的子節點</p>
+        </div>
+    </div>
+    <p>這不是後代節點</p>
 </body>
 </html>
