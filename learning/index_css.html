@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>子選擇器(Child Selector)</title>
+    <title>鄰居選擇器 Adjacent</title>
     <style>
-        #main-content > p{
-            color: orange;
+        #all-articles h2 + p {
+            color: orchid;
         }
-        #main-content >div>p{
-            color: red;
+        #all-articles h2 {
+            color: green;
         }
     </style>
 </head>
 <body>
-    <div id="main-content">
-        <p>這是子節點</p>
-        <div>
-            <p>是孫節點</p>
-        </div>
+    <div id="all-articles">
+        <article>
+            <h2>鄰居選擇器</h2>
+            <p>作者:張三</p>
+            <p>這是文章內容1...</p>
+        </article>
+        <article>
+            <h2>文章標題2</h2>
+            <p>作者:李四</p>
+            <p>這是文章內容2...</p>
+        </article>
+        <article>
+            <h2>文章標題3</h2>
+            <p>作者:王五</p>
+            <p>這是文章內容3...</p>
+        </article>
     </div>
 </body>
 </html>
