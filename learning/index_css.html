@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>後代選擇器</title>
+    <title>子選擇器(Child Selector)</title>
     <style>
-        #main_content p{
+        #main-content > p{
             color: orange;
         }
-        
-        #sub_content p{
-            color: blue;
+        #main-content >div>p{
+            color: red;
         }
     </style>
 </head>
 <body>
-    <div id="main_content">
-        <p>這是後代節點</p>
-        <div id="sub_content">
-            <p>也是後代節點,且是sub_content的子節點</p>
+    <div id="main-content">
+        <p>這是子節點</p>
+        <div>
+            <p>是孫節點</p>
         </div>
     </div>
-    <p>這不是後代節點</p>
 </body>
 </html>
