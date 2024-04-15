@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第1與最後子元素</title>
+    <title>CSS的權重</title>
+    <!--先比權重 inline > ID > class > element  再比前後覆蓋順序-->
     <style>
-       article P:first-child{
-        color: green;
-       }
-       article P:last-child{
-        color: red;
-       }
+        .p2{
+            color: blue;
+        }
+        #div_1{
+            color: green;
+        }
+        /* !important 要避免使用 */
+        #div_2{
+            color: mediumturquoise !important;
+        }
+        div{
+            color: red;
+        }
+        div{
+            color: orange;
+        }
     </style>
 </head>
 <body>
     <article>
-        <p>第1子元素</p>
-        <p>第2子元素</p>
-        <p>第3子元素</p>
-        <p>第4子元素</p>
+        <div>這是元素</div>
+        <div class="p2">這是class</div>
+        <div id="div_1">這是ID</div>
+        <div style="color: mediumorchid;">這是元素inline</div>
+        <div id="div_2" style="color: green;">這是ID 2 important</div>
     </article>
 </body>
 </html>
