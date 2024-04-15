@@ -3,20 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 背景圖片</title>
-    <!--先比權重 inline > ID > class > element  再比前後覆蓋順序-->
+    <title>CSS 偽類別(pseudo)</title>
     <style>
-        body{
-            background-image: url("./background/background.jpg");
-            color: white;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        a:link{
+            color: orange;
+        }
+        a:visited{
+            color: gray;
+        }
+        a:hover{
+            color: #1318b5;
+        }
+        a:active{
+            color: red;
+        }
+        li:hover{
+            background-color: gray;
+        }
+        li:not(:hover){
+            color: red;
         }
     </style>
 </head>
 <body>
-    <h1>你好</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit laboriosam porro quo, officiis sunt eveniet perferendis dolores esse quos facilis possimus beatae rem quia vitae aspernatur exercitationem repellendus eos adipisci.</p>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.example.com">Example</a>
+    <a href="https://www.openai.com">OpenAI</a>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
 </body>
 </html>
