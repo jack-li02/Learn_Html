@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 偽元素(pseudo element)</title>
+    <title>Flexbox 基礎教學</title>
     <style>
-        h1::first-letter{
-            color: blue;
+        .container {
+            display: flex;
+            width: 500px;
         }
-        p::first-line{
-            color: red;
+        .item {
+            /* flex: flex-grow shrink basis;  */
+            /* flex-grow: 1;
+            flex-shrink: 1;            
+            flex-basis: 1; */
+            flex: 1 1 1;
+            width: 100px; 
         }
-        p::selection{
-            color: white;
-            background-color: gray;
-        }
-        #fruit li::before{
-            content: "前";
-        }
-        #fruit li::after{
-            content: "後";
-        }
-        li::marker{
-            content: "*";
+        .item:nth-of-type(1) {
+            flex-shrink: 3;
         }
     </style>
 </head>
 <body>
-    <h1>CSS 偽元素</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, accusamus iusto laudantium optio exercitationem consectetur fuga deleniti, dignissimos est labore animi harum neque minus adipisci atque laboriosam voluptatibus eius?</p>
-    <ul id="fruit">
-        <li id="apple">蘋果</li>
-        <li id="orange">橘子</li>
-        <li id="banana">香蕉</li>
-    </ul>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
 </body>
 </html>
